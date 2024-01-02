@@ -1,0 +1,57 @@
+.less_talk_text {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin-bottom: 24px;
+}
+
+.button_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.learn_more_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+    font-size: 8px;
+    font-weight: 300;
+    background-image: url("../../../public/images/bg-button.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.less_talk_img {
+    display: none;
+}
+
+@media screen and (min-width: 767px) {
+    .less_talk_img {
+        display: block;
+    }
+
+    .content_wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .text_wrapper {
+        max-width: 640px;
+    }
+}

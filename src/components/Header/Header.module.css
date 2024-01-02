@@ -1,0 +1,170 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.menu {
+    display: none;
+}
+
+.logo_icon,
+.basket_icon {
+    fill: var(--accent-color);
+}
+
+.logo_icon {
+    width: 92px;
+    height: 20px;
+}
+
+.instagram_icon {
+    stroke: var(--accent-color);
+    transition: stroke 0.3s ease-in-out;
+}
+
+.facebook_icon {
+    fill: var(--accent-color);
+    transition: fill 0.3s ease-in-out;
+}
+
+.instagram_icon:hover {
+    stroke: var(--hover-yellow-color);
+}
+
+.facebook_icon:hover {
+    fill: var(--hover-yellow-color);
+}
+
+
+.close_icon {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.burger_icon {
+    cursor: pointer;
+}
+
+.mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mobile_nav {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+
+.mobile_nav_link {
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.mobile_nav_link:hover {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.socials {
+    display: flex;
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.socials_link {
+    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.mobile_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    background-image: url("../../../public/images/mobile-menu-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .mobile_menu {
+        background-image: url("../../../public/images/mobile-menu-bg@2x.png");
+    }
+}
+
+.mobile_menu.is_open {
+    transform: translateX(0);
+}
+
+.icons_wrapper {
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        padding: 32px 100px;
+        gap: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .mobile_menu,
+    .burger_icon {
+        display: none;
+    }
+
+    .nav_list {
+        display: flex;
+        gap: 10px;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+    }
+
+    .nav_link {
+        transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    }
+
+    .nav_link:hover {
+        color: var(--accent-color);
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav_list {
+        gap: 48px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
+
+    .logo_icon {
+        width: 182px;
+        height: 43px;
+    }
+
+    .basket_icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+

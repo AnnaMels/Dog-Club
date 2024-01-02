@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "Dry food for dogs of small breeds",
+      "type": "Savory",
+      "weight": "3 kg",
+      "flavor": "lamb",
+      "image": "product_image_1.jpg",
+      "rating": "4 stars",
+      "vendor_code": "34905",
+      "price": {
+        "current_price": "140.00$",
+        "original_price": "320.43$",
+        "currency": "USD"
+      },
+      "button": {
+        "text": "Buy",
+        "action_link": "purchase_link_1.com"
+      }
+    },
+    {
+      "name": "Dry food for dogs of small breeds",
+      "type": "Savory",
+      "weight": "3 kg",
+      "flavor": "lamb",
+      "image": "product_image_20.jpg",
+      "rating": "4 stars",
+      "vendor_code": "34924",
+      "price": {
+        "current_price": "140.00$",
+        "original_price": "320.43$",
+        "currency": "USD"
+      },
+      "button": {
+        "text": "Buy",
+        "action_link": "purchase_link_20.com"
+      }
+    }
+  ]
+}
